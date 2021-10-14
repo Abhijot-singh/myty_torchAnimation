@@ -1,0 +1,66 @@
+.main{
+    display: flex;
+    position: relative;
+}
+.question_mark{
+    position: absolute;
+    height: 43px;
+    width: 43px;
+    margin-left: 15%;
+    top: 40px;
+    z-index: 1;
+    animation: same 2s forwards ;
+}
+@keyframes same{
+    0%{
+    opacity: 1;
+    transform: scale(0);
+    }
+    100%{
+    transform: scale(3);
+    opacity:0;
+    }
+}
+#full{
+    animation: full 2s forwards;
+}
+@keyframes full{
+    0%{
+    opacity: 1;
+    }
+    100%{
+    opacity: 0;
+    }
+}
+.planets{
+    position: absolute;
+    opacity:0;
+    margin-left: 5%;
+    animation: planets 2s forwards;
+}
+@keyframes planets{
+    0%{
+      opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#hidden{
+    animation: hidden 2s forwards;
+}
+@keyframes hidden{
+    0%{
+     opacity: 1;
+    }
+    100%{
+     opacity: 0;
+    }
+}
+
